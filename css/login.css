@@ -1,0 +1,84 @@
+html,
+body {
+  background-image: url(../assets/login-background3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.form-signin {
+  background-color: white;
+  max-width: 350px; /* Aumentar a largura máxima do formulário */
+  padding: 2rem; /* Aumentar o preenchimento interno */
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 20px;
+  margin: auto; /* Centralizar horizontalmente */
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"],
+.form-signin input[type="password"] {
+  margin-bottom: -1px; /* Reduzir a margem inferior dos campos de entrada */
+}
+
+.form-signin .btn {
+  margin-top: 30px; /* Adicionar margem superior ao botão */
+  margin-bottom: 10px;
+  background-color: rgb(13, 65, 255); /* Cor do botão */
+  border-color: rgb(13, 65, 255); /* Cor da borda do botão */
+}
+
+.form-signin .btn:hover {
+  background-color: rgb(11, 47, 177); /* Cor do botão ao passar o mouse */
+}
+
+.form-signin a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px; /* Reduzir a margem inferior */
+}
+
+.header i {
+  font-size: 30px;
+  color: rgb(13, 65, 255);
+  margin-right: 10px; /* Aumentar a margem entre o ícone e o texto */
+}
+
+.header h4 {
+  margin: 0; /* Remover margens padrão */
+}
+
+.form-signin .text-center a {
+  margin-left: 0px; /* Adicionar margem à esquerda para separar os links */
+}
+
+.retorno {
+  font-size: 14px;
+  margin-top: 20px; /* Adicionar margem superior ao link "Voltar para a tela inicial" */
+  color: rgb(13, 65, 255);
+}
+
+.form-signin p {
+  font-size: 15px;
+}
+/* Adicionando regra de mídia para diminuir o tamanho do texto quando a tela for redimensionada */
+@media (max-width: 576px) {
+  .header h4 {
+    font-size: 1.2rem; /* Tamanho de fonte menor para telas menores */
+  }
+}

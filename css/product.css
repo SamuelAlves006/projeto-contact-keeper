@@ -1,0 +1,189 @@
+.container {
+  max-width: 960px;
+}
+
+.icon-link > .bi {
+  width: .75em;
+  height: .75em;
+}
+
+/*
+ * Custom translucent site header
+ */
+
+.site-header {
+  background-color: rgba(0, 0, 0, .85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.site-header a {
+  color: #8e8e8e;
+  transition: color .15s ease-in-out;
+}
+.site-header a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*
+ * Dummy devices (replace them with your own or something else entirely!)
+ */
+
+.product-device {
+  position: absolute;
+  right: 10%;
+  bottom: -30%;
+  width: 300px;
+  height: 540px;
+  background-color: #333;
+  border-radius: 21px;
+  transform: rotate(30deg);
+}
+
+.product-device::before {
+  position: absolute;
+  top: 10%;
+  right: 10px;
+  bottom: 10%;
+  left: 10px;
+  content: "";
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: 5px;
+}
+
+.product-device-2 {
+  top: -25%;
+  right: auto;
+  bottom: 0;
+  left: 5%;
+  background-color: #e5e5e5;
+}
+
+
+/*
+ * Extra utilities
+ */
+
+.flex-equal > * {
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    flex: 1;
+  }
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+}
+
+.navbar {
+  box-shadow: rgba(0, 38, 255, 0.2) 0px 7px 29px 0px;
+  background-color: white;
+}
+
+.navbar-brand {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 19px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-left: 15px;
+}
+
+.nav-link {
+  color: rgb(0, 0, 0);
+  margin-left: 50px;
+  transition: 0.3s;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: rgb(0, 0, 0);
+}
+
+.nav-link::before {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background-color: rgb(13, 65, 255);
+  transition: all .4s;
+}
+
+.nav-link:hover::before {
+  width: 100%;
+}
+
+.nav-item button {
+  margin: 0 30px 0 50px;
+  background-color: rgb(13, 65, 255);
+  color: white;
+  border-radius: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+}
+
+.nav-item button:hover {
+  background-color: rgb(11, 47, 177);
+  color: white;
+}
+
+footer {
+  background-color: rgb(13, 65, 255);
+  width: 100%;
+  padding: 0%;
+  margin: 0%;
+  font-weight: 300;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+.left-section h1 {
+  font-weight: bold;
+  font-size: 70px;
+}
+
+.left-section p {
+  font-size: 18px;
+}
+
+main .btn {
+  background-color: rgb(13, 65, 255);
+  color: white;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  margin-top: 20px;
+  padding: 10px 20px 10px 20px;
+}
+
+main .btn:hover, main .left-section a .btn:active {
+  background-color: rgb(11, 47, 177);
+  color: white;
+}
+
+i {
+  font-size: 30px;
+  color: rgb(13, 65, 255);
+}
+
+.nav-item a .btn:active {
+  background-color: rgb(11, 47, 177);
+  color: #fff;
+}
